@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'Vazir';
+	src: url('fonts/Vazir.eot');
+	src: url('fonts/Vazir.woff') format('woff');
+	src: url('fonts/Vazir.ttf')
+}
+@media screen and (max-width: 1150px) {
+  .flex-container {
+    width: 1000px;
+    height: 260px;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .flex-container {
+    height: 520px;
+    width: 600px;
+  }
+  .item {
+    width: 50%;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .item {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .flex-container {
+    width: 270px;
+    font-size: 0.55em;
+    flex-direction: column;
+    min-height: 600px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+body {
+  font-family: "Vazir";
+  margin: 0;
+    background: url('assets/img/p3.png') repeat;
+      padding: 30px auto;
+  padding-top: 30px;
+}
+.item {
+  box-sizing: border-box;
+  border: 1px solid #1e212d;
+  border-radius: 8px;
+  margin: 4px;
+  width: 25%;
+  padding: 10px;
+}
+
+.flex-container {
+  min-height: 250px;
+  display: flex;
+  background-color: #eabf9f;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin: 0px auto;
+  border-radius: 12px;
+  box-shadow: 1px 2px 5px #8a635096;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  object-fit: cover;
+}
+/*----------*/
+nav img{
+  align-items: flex-end;
+  border-radius: 3px;
+}
+
+body h3, body h2{
+  text-align: center;
+  margin: 5px auto;
+  background-color: #b68973;
+}
+
+a {
+  background-color: #b68973;
+  color: #1e212d;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 3px #1e212d;
+  padding: 10px;
+  text-decoration: none;
+}
+table{
+  padding: 5px;
+  margin: 20px auto;
+  border: 1px solid #8a6857;
+  background-color: #b68973;
+}
+table caption{
+  background-color: #b68973;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  }
+tr:nth-child(even){background-color: #eabf9f}
+.appbar {
+  background-color: #1e212d;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:50px;
+}
+@media print{
+  p.bodyText{
+      font-family: "BNazanin", Helvetica, sans-serif;
+  }
+}
