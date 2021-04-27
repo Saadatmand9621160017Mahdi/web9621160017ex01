@@ -289,30 +289,43 @@ body .single_content .img_box {
         min-height: 100px;
         overflow: hidden;
     }
-  }
+}
 @media screen and (max-width: 900px) {
     .content {
         display: block;
-        width: 75%;
+        width: 100%;
         float: right;
         margin-left: 10px;
+    }
+    article img{
+        width: 50%;
+    }
+    article img:hover{
+        width: 55%;
     }
     .sidebar{
         float: right;
         width: 75%;
+        margin: 10px auto;
         
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     article {
         display: flex;
         flex-direction: column; 
     }
     article img{
-        width: 27%;
+        width: 100%;
+        display: block;
+    }
+    article img:hover{
+        width: 95%;
+        margin: 10px auto;
         display: block;
     }
     .sidebar{
+        margin: 10px auto;
         float: right;
         width: 75%;
         
@@ -328,7 +341,7 @@ body .single_content .img_box {
         color: #000;
         background-color: #fff;
     }
-    table, img {
+    article, img {
         break-inside: avoid;
     }
     header, nav {
