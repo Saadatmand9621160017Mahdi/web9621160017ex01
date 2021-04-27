@@ -317,9 +317,21 @@ body .single_content .img_box {
         width: 75%;
         
     }
-    @media print{
-        p.bodyText{
-            font-family: "BNazanin", Helvetica, sans-serif;
-        }
+}
+
+
+@media print{
+    p.bodyText{
+        font-family: "BNazanin", Helvetica, sans-serif;
+    }
+    body {
+        color: #000;
+        background-color: #fff;
+    }
+    table, img {
+        break-inside: avoid;
+    }
+    header, nav {
+        display: none;
     }
 }

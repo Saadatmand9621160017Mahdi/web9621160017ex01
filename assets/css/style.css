@@ -40,7 +40,7 @@
 body {
   font-family: "Vazir";
   margin: 0;
-    background: url('assets/img/p3.png') repeat;
+    background: url('../img/p3.png') repeat;
       padding: 30px auto;
   padding-top: 30px;
 }
@@ -104,6 +104,7 @@ th, td {
   padding: 8px;
   }
 tr:nth-child(even){background-color: #eabf9f}
+
 .appbar {
   background-color: #1e212d;
   height: 80px;
@@ -114,6 +115,17 @@ tr:nth-child(even){background-color: #eabf9f}
   border-radius:50px;
 }
 @media print{
+  body {
+    color: #000;
+    background-color: #fff;
+  }
+
+  nav, header {
+    display: none;
+  }
+  table, img {
+    break-inside: avoid;
+  }
   p.bodyText{
       font-family: "BNazanin", Helvetica, sans-serif;
   }
